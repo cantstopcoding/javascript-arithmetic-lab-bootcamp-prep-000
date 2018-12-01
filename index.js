@@ -23,12 +23,31 @@ function dec(a) {
 }
 
 function makeInt(a) {
+<<<<<<< HEAD
  return parseInt(a, 10);
 }
 
 function preserveDecimal(n) {
   return parseFloat(n);
 }
+=======
+ return parseInt(a);
+}
+
+/*describe('makeInt(n)', function() {
+  it('parses n as an integer and returns the parsed integer', function() {
+    expect(makeInt(a.toString())).toEqual(a)
+  })
+
+  it('assumes base 10', function() {
+    expect(makeInt('0x2328')).toEqual(0)
+  })
+
+  it('returns NaN as appropriate', function() {
+    expect(isNaN(makeInt('sldkjflksjf'))).toEqual(true)
+  })
+})
+>>>>>>> 1e9baa4807fb02df4246de06ff39b116820c7b60
 
 /*
 describe('preserveDecimal(n)', function() {
